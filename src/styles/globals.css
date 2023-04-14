@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+  @apply inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white disabled:opacity-50 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-offset-2;
+}
+
+.btn-primary {
+  @apply bg-indigo-600 hover:bg-indigo-700 disabled:bg-indigo-600 focus:ring-indigo-500;
+}
+
+.btn-alert {
+  @apply bg-red-600 hover:bg-red-700 disabled:bg-red-600 focus:ring-red-500;
+}
+
+.btn-icn {
+  @apply bg-white rounded-md inline-flex text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500;
+}
+
+.overscroll-container {
+  overflow-y: scroll;
+  overscroll-behavior-y: contain;
+  scroll-snap-type: y proximity;
+}
+
+.overscroll-container > ul > li:last-child {
+  scroll-snap-align: end;
+}
